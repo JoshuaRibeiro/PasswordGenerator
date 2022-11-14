@@ -1,6 +1,4 @@
-cd ($PSScriptRoot + '\CSV')
-
-$csv = Import-CSV -Path dictionary.csv
+$csv = Import-CSV -Path ($PSScriptRoot + '\CSV\dictionary.csv')
 $dictionary = [System.Collections.ArrayList]::new()
 
 ForEach ($word in $csv) {
